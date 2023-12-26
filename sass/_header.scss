@@ -1,0 +1,43 @@
+header {
+    width: 100%;
+    height: calc(90vh - $nav);
+    // background-color: gray;
+}
+
+.m-top-1 {
+    margin-top: $nav;
+}
+
+.img-banner {
+    background-image: url(../images/homepage-banner-image-1920x700.jpg);
+}
+
+.banner {
+    @include flex-center;
+    @include wh100;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media(min-width: 1024px) {
+    header {
+        height: calc(65vh - $nav);
+        // background-color: gray;
+    }
+}
+
+// @media(min-width: 1200px) {
+//     header {
+//         height: calc(60vh - $nav);
+//         // background-color: gray;
+//     }
+// }
+@media(min-width: 1400px) {
+    header {
+        height: calc(75vh - $nav);
+        // background-color: gray;
+    }
+}
