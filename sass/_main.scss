@@ -102,7 +102,6 @@ p {
     color: white;
 }
 
-
 .btn-wrap {
     display: flex;
     justify-content: flex-start;
@@ -137,7 +136,6 @@ p {
     justify-content: center;
 }
 
-
 .con-wrap {
     display: flex;
     justify-content: center;
@@ -170,6 +168,44 @@ p {
 
     img {
         width: 100%;
+    }
+}
+
+.img-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+
+    .box-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 3rem 0 12rem;
+
+        img {
+            border-radius: 50%;
+            box-shadow: .2rem .2rem .6rem .1rem $color4;
+            overflow: hidden;
+            width: 70%;
+        }
+    }
+
+    .box-img:after {
+        content: attr(data-team-member);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 3rem 0;
+        font-size: 3rem;
+        font-weight: 700;
+        color: white;
+        filter: drop-shadow(.2rem .2rem .1rem $color4);
     }
 }
 
@@ -279,6 +315,27 @@ p {
 
 }
 
+.font-3 {
+    font-size: 3rem !important;
+}
+
+.font-w-7 {
+    font-weight: 700 !important;
+}
+
+.blog-img {
+    margin: 3rem 0;
+    width: 100%;
+    max-width: 72rem;
+
+
+    img {
+        width: 100%;
+        border-radius: .5rem;
+        filter: drop-shadow(.8rem .8rem .5rem rgb(124, 124, 124));
+    }
+}
+
 
 @media(min-width: 768px) {
 
@@ -297,6 +354,38 @@ p {
 
             margin: 5rem 2rem;
         }
+    }
+
+    .img-boxes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 5rem 0;
+
+        .box-img {
+
+            margin: 3rem 0 12rem;
+            width: calc(646px / 2);
+            height: calc(680px / 2);
+
+            img {
+                transition: .3s ease-in-out;
+            }
+        }
+
+        .box-img:after {
+            font-size: 2rem;
+            filter: drop-shadow(.2rem .1rem .1rem black);
+        }
+
+        .box-img:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+
     }
 
 
@@ -325,6 +414,23 @@ p {
         }
     }
 
+    .img-boxes {
+
+
+        .box-img {
+
+            width: calc(646px / 3);
+            height: calc(680px / 3);
+
+
+        }
+
+
+
+
+
+
+    }
 
 }
 

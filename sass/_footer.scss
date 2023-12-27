@@ -4,6 +4,8 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-top: .1rem solid $color5;
+    overflow: hidden;
 
     .footer-wrap {
         display: flex;
@@ -54,7 +56,7 @@ footer {
 
                     li {
                         position: relative;
-                        width: 15rem;
+                        width: 16rem;
                         height: auto;
                         margin-left: 2rem;
                         list-style: none;
@@ -74,6 +76,11 @@ footer {
 
                             i {}
                         }
+                    }
+
+                    .li-wide {
+                        width: 100%;
+                        margin-bottom: 1.5rem;
                     }
 
                     li::after {
