@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -31,9 +34,11 @@
                 </div>
                 <div class="ul-wrap">
                     <ul class="list mobile-list">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#home" class="nav-btn">Home</a></li>
+                        <li><a href="#AboutUs" class="nav-btn">About Us</a></li>
+                        <li><a href="#Contact" class="nav-btn">Contact</a></li>
+                        <li><a href="#team-members" class="nav-btn">Team Members</a></li>
+                        <li><a href="#LatestBlogs" class="nav-btn">Latest Blogs</a></li>
                     </ul>
                 </div>
 
@@ -42,7 +47,7 @@
     </nav>
     <!-- Navigation  -->
     <!-- Header - Home  -->
-    <header class="m-top-1">
+    <header class="m-top-1" id="home">
         <div class="container no-padding wh100">
             <div class="row ">
                 <div class="banner img-banner ">
@@ -62,7 +67,7 @@
     <!-- Header - Home  -->
     <main class="m-t-1">
         <!-- Section - About Us  -->
-        <div class="container">
+        <div class="container" id="AboutUs">
             <div class="row">
 
                 <div class="con-wrap">
@@ -92,7 +97,7 @@
         </div>
         <!-- Section - About Us  -->
         <!-- Section - cards - latest blogs  -->
-        <div class="container no-padding">
+        <div class="container no-padding" id="LatestBlogs">
             <div class="row">
                 <div class="text-title-con bg-grey">
                     <div class="t1 font-3">Latest blog posts</div>
@@ -163,7 +168,7 @@
         </div>
         <!-- Section - cards - latest blogs  -->
         <!-- Section - Contact us  -->
-        <div class="container bg-img-1 no-padding height-5">
+        <div class="container bg-img-1 no-padding height-5" id="Contact">
             <div class="row black-3 no-padding">
                 <div class="con-wrap no-padding  ">
                     <div class="article-wrap ">
@@ -228,9 +233,10 @@
                         quasi reprehenderit?</p>
                 </div>
                 <div class="social-links">
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <a href="" class="sc-md"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="sc-md"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="sc-md"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="" class="sc-md"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
             <div class="foot-box">
@@ -268,8 +274,6 @@
         </div>
     </footer>
     <!-- Footer  -->
-
-
     <script src="js/script.js"></script>
 </body>
 
