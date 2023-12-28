@@ -156,13 +156,15 @@
 
 @media(min-width:1024px) {
     .con-nav {
+        padding: 0 6rem;
         overflow: hidden;
 
 
         .wrap-box {
-            .img-wrap {
-                img {}
-            }
+            width: auto;
+            // .img-wrap {
+            //     img {}
+            // }
 
             .menu-lines {
                 display: none;
@@ -189,17 +191,34 @@
                         // margin: .5rem;
 
                         a {
+                            position: relative;
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             width: auto;
                             height: auto;
-                            padding: .5rem 2rem;
+                            padding: .5rem 2rem 1rem;
                             color: black;
                             text-decoration: none;
                             font-size: 1.4rem;
-                            border-radius: 1rem;
-                            border: 1px solid $color1;
+                            // border-radius: 1rem;
+                            // border: 1px solid $color1;
+                            overflow: hidden;
+                        }
+
+                        a::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 1rem;
+                            background-color: $color1;
+                            border-radius: 50%;
+                            transform: rotate(5deg) translateY(40%);
+                            transform-origin: left;
+                            transition: .3s ease-in-out;
+
                         }
                     }
 
@@ -207,7 +226,13 @@
                         a {
                             // font-weight: 500;
                             color: $color1;
-                            transform: scale(1.1);
+                            // transform: scale(1.1);
+
+                        }
+
+                        a::after {
+
+                            transform: rotate(0) translateY(70%);
 
                         }
                     }
@@ -225,6 +250,13 @@
 
 
 
+
+    }
+}
+
+@media(min-width:1200px) {
+    .con-nav {
+        padding: 0 15rem;
 
     }
 }
