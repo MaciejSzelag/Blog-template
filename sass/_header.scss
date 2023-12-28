@@ -8,6 +8,10 @@ header {
     margin-top: $nav;
 }
 
+.sm-h {
+    height: calc(40vh - $nav) !important;
+}
+
 .img-banner {
     background-image: url(../images/homepage-banner-image-1920x700.jpg);
 }
@@ -27,6 +31,10 @@ header {
         height: calc(65vh - $nav);
         // background-color: gray;
     }
+
+    .sm-h {
+        height: calc(40vh - $nav) !important;
+    }
 }
 
 // @media(min-width: 1200px) {
@@ -38,6 +46,11 @@ header {
 @media(min-width: 1400px) {
     header {
         height: calc(75vh - $nav);
+
+        .sm-h {
+            height: calc(40vh - $nav) !important;
+        }
+
         // background-color: gray;
     }
 }
